@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package prueba;
 
-/**
- *
- * @author josed
- */
-public class Tv {
+
+class  Tv{
+String marca;
+int pulgada;
+boolean encendido;
+int volumen;
+
+public void encender(){
+    System.out.println("La TV se esta encendida");
     
+}
+
+
+public void apagar(){
+
+    System.out.println("La TV se esta apagando");}
+
+public void suvirvolumen(){
+    System.out.println(" Subiendo el volumen");}
+
+public void bajandovolumen(){
+    System.out.println("Bajando el bolumen");}
+
 }
