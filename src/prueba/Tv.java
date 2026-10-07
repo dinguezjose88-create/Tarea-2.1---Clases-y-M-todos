@@ -8,20 +8,46 @@ int pulgada;
 boolean encendido;
 int volumen;
 
-public void encender(){
-    System.out.println("La TV se esta encendida");
+    
+   public Tv(String marca, int pulgada, boolean encendido, int volumen) {
+
+    this.marca = marca;
+    this.pulgada = pulgada;
+    this.encendido = encendido;
+    this.volumen = volumen;
+}
+    
+
+
+
+public boolean encender(){
+   // System.out.println("La TV  esta encendida");
+    
+    return this.encendido =  true;
     
 }
 
 
-public void apagar(){
+public boolean apagar(){
 
-    System.out.println("La TV se esta apagando");}
+   // System.out.println("La TV se esta apagando");
+        return this.encendido =  false;
 
-public void suvirvolumen(){
-    System.out.println(" Subiendo el volumen");}
 
-public void bajandovolumen(){
-    System.out.println("Bajando el bolumen");}
+}
 
+public int suvirVolumen(){
+   //System.out.println(" Subiendo el volumen");
+  
+   return this.volumen +=5;
+
+}
+
+public int bajarVolumen(){
+    //System.out.println("Bajando el bolumen");
+
+   return this.volumen  -=5;
+
+
+}
 }

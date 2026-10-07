@@ -6,40 +6,26 @@ public class Prueba {
 
   
     public static void main(String[] args) {
-        Tv tv1 = new Tv();
+    Tv tv1 = new Tv("Samsung", 55, false, 0);
+    Tv tv2 = new Tv("LG", 32, false, 0);
+    Tv tv3 = new Tv("TCL", 72, false, 0);
         
-        Tv tv2 = new Tv();
-                 
-        Tv tv3 = new Tv();
+       
+        System.out.println("TV 1: " + tv1.marca + " " + tv1.pulgada + " pulgadas");
+        System.out.println("TV encendida: " + tv1.encender());
+        System.out.println("Volumen: " + tv1. suvirVolumen());
+        System.out.println("TV encendida: " + tv1.apagar());
         
-        tv1.marca = "Samsung";
-        tv1.pulgada = 55;
-        tv1.volumen = 20;
+        System.out.println("TV 2: " + tv2.marca + " " + tv2.pulgada + " pulgadas");
+        System.out.println("TV encendida: " + tv2.encender());
+        System.out.println("Volumen: " + tv2. suvirVolumen());
+        System.out.println("TV encendida: " + tv2.apagar());
         
-        tv1.encender();
-        tv1.bajandovolumen();
-        tv1.bajandovolumen();
-        tv1.apagar();
+        System.out.println("TV 3: " + tv3.marca + " " + tv3.pulgada + " pulgadas");
+        System.out.println("TV encendida: " + tv3.encender());
+        System.out.println("Volumen: " + tv3. suvirVolumen());
+        System.out.println("TV encendida: " + tv3.apagar());
         
-        
-        tv2.marca = "LG";
-        tv2.pulgada = 32;
-        tv2.volumen = 50;
-        
-        tv2.encender();
-        tv2.bajandovolumen();
-        tv2.bajandovolumen();
-        tv2.apagar();
-        
-        
-        tv3.marca = "TCL";
-        tv3.pulgada = 72;
-        tv3.volumen = 80;
-        
-        tv3.encender();
-        tv3.bajandovolumen();
-        tv3.bajandovolumen();
-        tv3.apagar();
 
 
     }
